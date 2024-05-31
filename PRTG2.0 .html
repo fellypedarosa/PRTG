@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC NEXTEP</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+            background-color: #292929;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 180px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(20, 20, 20, 0.1);
+            background-color: #1e2a4a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.158);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .iframe-name {
+            font-family: 'Arial Black', sans-serif;
+            position: absolute;
+            top: 72%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            color: #000000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; /* Adicione esta linha para o contorno branco */
+
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
+        }
+
+        .error-message {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 18px;
+            color: #fcfcfc;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 10px; 
+            border: 1px solid rgba(20, 20, 20, 0.1);
+            background-color: #ff505e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.158);
+            transition: transform 0.3s ease-in-out;
+            box-sizing: border-box; 
+
+            
+        }
+
+        .error-message::before {
+            content: "⚠";
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    </style>
+
+    <link rel="icon" href="http://nextepsolucoes.com.br/wp-content/uploads/2023/04/cropped-Logo-Nextep-Branco-Fav-192x192.png" type="image/png">
+
+</head>
+
+
+<body>
+    
+
+    <div class="iframe-container">
+        <iframe src="http://mcb01.ddns.net:8531/public/mapshow.htm?id=2112&mapid=EB92103C-1766-4CE7-89EE-EDA5111E7152"></iframe>
+        <p class="iframe-name">ARTEZANO</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://prtg.bdsar.com.br:8531/public/mapshow.htm?id=2651&mapid=A92C33EE-8CB7-4F1F-B130-7EA964F0355A"></iframe>
+        <p class="iframe-name">BDS</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://200.213.25.162:8531/public/mapshow.htm?id=2160&mapid=7DF2DBA4-1215-43B4-BC44-6FB4B6E9BD6B"></iframe>
+        <p class="iframe-name">BLK</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://blitztransporte.ddns.net:8531/public/mapshow.htm?id=2142&mapid=DFB29353-438C-4839-B567-04AA8A5B8B99"></iframe>
+        <p class="iframe-name">BLITZ</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://brauliopinto.ddns.net:8531/public/mapshow.htm?id=2136&mapid=8EC3C40E-CE5C-4826-B6F1-748E6279E9AB"></iframe>
+        <p class="iframe-name">BRAULIO</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://sulutilidades.no-ip.org:8531/public/mapshow.htm?id=2171&mapid=906D7EF9-05E6-4C6F-879C-332FAA745AB3"></iframe>
+        <p class="iframe-name">CASA MIX</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://chocolatesplatanos.ddns.net:8531/public/mapshow.htm?id=2179&mapid=F713E4C6-6C34-45D3-81BF-6076765F0678"></iframe>
+        <p class="iframe-name">PLATANOS</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://cooprogran.no-ip.org:8531/public/mapshow.htm?id=2339&mapid=8CE7430B-D8A0-4EEE-8662-15F69F47EE21"></iframe>
+        <p class="iframe-name">MESQUITA</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://contax.noip.me:8531/public/mapshow.htm?id=2106&mapid=EF218658-F562-4051-B487-9AB9B81CB61E"></iframe>
+        <p class="iframe-name">CONTAX</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://prtg.flexograv.com.br:8531/public/mapshow.htm?id=2917&mapid=7E180208-1C04-4F1A-9B72-5277C83E3CD7"></iframe>
+        <p class="iframe-name">FLEXOGRAV 1</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://prtg.flexograv.com.br:8532/public/mapshow.htm?id=2913&mapid=E82A74B4-B62C-4754-B008-467F8DA0C97C"></iframe>
+        <p class="iframe-name">FLEXOGRAV 2</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://201.87.198.186:8531/public/mapshow.htm?id=2181&mapid=FA7583C8-BB9F-4880-9263-083072977925"></iframe>
+        <p class="iframe-name">FOLHA SECA</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://grupocriativo2.ddns.net:8531/public/mapshow.htm?id=2207&mapid=296F12EB-EFE6-4974-BD1D-1EA021254B30"></iframe>
+        <p class="iframe-name">GRUPO CRIATIVO</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://prtg.ielb.org.br:8531/public/mapshow.htm?id=2581&mapid=0263B361-D638-4846-BF3F-40D1BFA400E6"></iframe>
+        <p class="iframe-name">IELB</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://labhipica.ddns.net:8531/public/mapshow.htm?id=2118&mapid=517BB0FF-5E27-4CCE-8CDF-A7BBB69A5B41"></iframe>
+        <p class="iframe-name">HIPICA</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://prtg.mamorad.com.br:8531/public/mapshow.htm?id=2706&mapid=C419B16B-3946-4330-977F-A8EFD66C7434"></iframe>
+        <p class="iframe-name">MAMORAD</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://preza.ddns.net:8531/public/mapshow.htm?id=2170&mapid=AFB1FA5C-3B32-4D8F-B00F-CEA58AB57F61"></iframe>
+        <p class="iframe-name">PREZA</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://177.99.209.185:8531/public/mapshow.htm?id=2443&mapid=4C00A7A9-DB73-4D54-8909-E0B9CBAC2182"></iframe>
+        <p class="iframe-name">CRUZEIRO MATRIZ</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://187.58.138.130:8531/public/mapshow.htm?id=2275&mapid=2AE4AE9A-5B57-4A70-AADB-8FBFC1F4032B"></iframe>
+        <p class="iframe-name">Cliente 4</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://168.181.36.173:8531/public/mapshow.htm?id=2268&mapid=BB048792-3D34-4745-B233-91CE9F7308CA"></iframe>
+        <p class="iframe-name">Cliente 5</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://fabonato01.ddns.net:8531/public/mapshow.htm?id=2538&mapid=0D76F8C4-7F48-41A8-8550-E6065FEFBA3C"></iframe>
+        <p class="iframe-name">FABONATO MATRIZ</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://fabonato03.ddns.net:8531/public/mapshow.htm?id=2189&mapid=B64D9309-D380-4044-A991-AB325548A3DD"></iframe>
+        <p class="iframe-name">FABONATO FL2</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://132.255.31.71:8531/public/mapshow.htm?id=2250&mapid=09546709-C34A-4225-89E6-815C8F895BFB"></iframe>
+        <p class="iframe-name">Cliente 6</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://132.255.28.220:8531/public/mapshow.htm?id=2178&mapid=170CF458-90DD-4E9D-9D76-547F8C765940"></iframe>
+        <p class="iframe-name">Cliente 7</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://201.182.35.155:8531/public/mapshow.htm?id=2660&mapid=EF630078-81E4-465C-BB9D-2ADE5C962F67"></iframe>
+        <p class="iframe-name">IDEAL LOJA 3</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://132.255.31.109:8531/public/mapshow.htm?id=2255&mapid=1621381A-2581-458A-B7E2-17FD7A19329C"></iframe>
+        <p class="iframe-name">Cliente 8</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://187.44.89.216:8531/public/mapshow.htm?id=2514&mapid=5D949B0E-1E1A-4A43-A51C-7139A2255307"></iframe>
+        <p class="iframe-name">TEKA MATRIZ</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://rabaiolifilial.ddns.net:8531/public/mapshow.htm?id=2192&mapid=AC308C67-B77C-4A75-B241-D61FC21582C8"></iframe>
+        <p class="iframe-name">SUPER RABAIOLI</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://prtg.fiber.com.br:8531/public/mapshow.htm?id=2982&mapid=CCFC4E4C-064F-438B-9E9B-5417E9CAFACC"></iframe>
+        <p class="iframe-name">TOP SHOES</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://189.15.5.224:8531/public/mapshow.htm?id=2381&mapid=7EFC9D31-C1C2-4E7C-95AE-158CA1CE0842"></iframe>
+        <p class="iframe-name">VERO PRINT</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://viabazar01.no-ip.org:8531/public/mapshow.htm?id=2113&mapid=4C080D40-6B09-42F0-B0F1-72D2D452E0CF"></iframe>
+        <p class="iframe-name">VIA BAZAR MATRIZ</p>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe src="http://weco.noip.me:8531/public/mapshow.htm?id=2573&mapid=188EAA2B-0730-4B18-89A4-493A23C8EE4C"></iframe>
+        <p class="iframe-name">WECO</p>
+    </div>
+    
+    <!-- (Outros cliente abaixo. Não mexer acima) -->
+
+    <script>
+        document.querySelectorAll('iframe').forEach(function(iframe) {
+          //Verifica se o carregamento do iframe vai dar certinho
+            iframe.addEventListener('load', function() {
+            iframe.classList.remove('error-message');
+          });
+          //Função das mensagens de erro
+          
+          var timeoutId = setTimeout(function() {
+            replaceIframe(iframe);
+          }, 10000);
+          //Tempo maximo de carregamento esperado antes de retornar mensagem de erro
+      
+          iframe.addEventListener('load', function() {
+            clearTimeout(timeoutId);
+             // Cancela o timeout se o iframe for carregado com sucesso antes do tempo limite
+          });
+      
+          iframe.addEventListener('error', function() {
+            replaceIframe(iframe);
+            // Chama a função para substituir o iframe por uma mensagem de erro
+          });
+        });
+      // Função para substituir o iframe por uma mensagem de erro
+        function replaceIframe(iframe) {
+            // Link padrão e mensagem de erro, porém deixei pelado aki
+          var defaultLink = "";
+          var iframeName = iframe.parentElement.querySelector('.iframe-name').textContent;
+          var errorMessage = "A não, parece que o cliente " + iframeName + " está fora do ar. Precisamos verificar!";
+                  
+      
+          // Adiciona a classe de mensagem de erro ao iframe
+          iframe.classList.add('error-message');
+          iframe.src = ''; // Pode ser útil limpar o src para evitar a exibição da mensagem de erro padrão do navegador
+      
+          var errorDiv = document.createElement('div');
+          errorDiv.className = 'error-message';
+          errorDiv.innerHTML = errorMessage + " <a href='" + defaultLink + "' target='_blank'>" + defaultLink + "</a>";
+          
+          // Remove o elemento <p class="iframe-name"> se a classe error-message estiver presente
+            if (iframe.classList.contains('error-message')) {
+                var iframeName = iframe.parentNode.querySelector('.iframe-name');
+                if (iframeName) {
+                    iframeName.remove();
+                }
+            }
+    
+          iframe.parentNode.replaceChild(errorDiv, iframe);
+        }
+
+        const iframes = document.querySelectorAll('.iframe-container iframe');
+        let currentIndex = 0;
+
+        function rotateHoverEffect() {
+            iframes.forEach((iframe, i) => {
+                iframe.style.transform = i === currentIndex ? 'scale(1.05)' : '';
+            });
+            currentIndex = (currentIndex + 1) % iframes.length;
+        }
+
+        setInterval(rotateHoverEffect, 2000);//Efeito de passar o mouse a cada 2seg
+
+        function reloadPage() {
+            location.reload();
+        }
+
+        setInterval(reloadPage, 60000); // Recarrega a página a cada 60 segundos
+
+      </script>
+    
+
+</body>
+
+</html>
